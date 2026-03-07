@@ -1,0 +1,10 @@
+[package]
+name = "orbital_hud"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+iced = { version = "0.13", features = ["advanced", "tokio", "svg"] }
+sysinfo = "0.32"
+chrono = "0.4"
+rand = "0.10.0"
