@@ -61,7 +61,11 @@ impl FileEntry {
                     let mode = metadata.mode();
                     let is_executable = !is_dir && (mode & 0o111 != 0);
                     let permissions = format_permissions(mode, is_dir);
-                    let size = if is_dir { metadata.size() } else { metadata.len() };
+                    let size = if is_dir {
+                        metadata.size()
+                    } else {
+                        metadata.len()
+                    };
                     let modified = metadata.modified().ok();
 
                     entries.push(FileEntry {
