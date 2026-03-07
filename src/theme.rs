@@ -199,7 +199,12 @@ pub fn container_dropdown(_theme: &Theme) -> container::Style {
         background: Some(Background::Color(DROPDOWN_BG)),
         text_color: Some(TEXT_PRIMARY),
         border: Border {
-            color: Color { r: 1.0, g: 1.0, b: 1.0, a: 0.12 },
+            color: Color {
+                r: 1.0,
+                g: 1.0,
+                b: 1.0,
+                a: 0.12,
+            },
             width: 1.0,
             radius: 0.into(),
         },
@@ -226,7 +231,12 @@ pub fn container_modal_box(_theme: &Theme) -> container::Style {
         background: Some(Background::Color(BG_DARK)),
         text_color: Some(TEXT_PRIMARY),
         border: Border {
-            color: Color { r: 1.0, g: 1.0, b: 1.0, a: 0.25 },
+            color: Color {
+                r: 1.0,
+                g: 1.0,
+                b: 1.0,
+                a: 0.25,
+            },
             width: 1.0,
             radius: 0.into(),
         },
@@ -404,11 +414,19 @@ pub fn button_exec_row(theme: &Theme, status: button::Status) -> button::Style {
 pub fn button_selected_row(_theme: &Theme, _status: button::Status) -> button::Style {
     button::Style {
         background: Some(Background::Color(Color {
-            r: 1.0, g: 1.0, b: 1.0, a: 0.12,
+            r: 1.0,
+            g: 1.0,
+            b: 1.0,
+            a: 0.12,
         })),
         text_color: TEXT_PRIMARY,
         border: Border {
-            color: Color { r: 1.0, g: 1.0, b: 1.0, a: 0.25 },
+            color: Color {
+                r: 1.0,
+                g: 1.0,
+                b: 1.0,
+                a: 0.25,
+            },
             width: 1.0,
             radius: 0.into(),
         },
@@ -466,7 +484,12 @@ pub fn button_hovered_drop_target(_theme: &Theme, _status: button::Status) -> bu
 pub fn button_context_menu(_theme: &Theme, status: button::Status) -> button::Style {
     match status {
         button::Status::Hovered => button::Style {
-            background: Some(Background::Color(Color { r: 1.0, g: 1.0, b: 1.0, a: 0.05 })),
+            background: Some(Background::Color(Color {
+                r: 1.0,
+                g: 1.0,
+                b: 1.0,
+                a: 0.05,
+            })),
             text_color: TEXT_PRIMARY,
             border: Border::default(),
             shadow: Shadow::default(),
@@ -483,7 +506,12 @@ pub fn button_context_menu(_theme: &Theme, status: button::Status) -> button::St
 pub fn button_context_danger(_theme: &Theme, status: button::Status) -> button::Style {
     match status {
         button::Status::Hovered => button::Style {
-            background: Some(Background::Color(Color { r: 0.85, g: 0.22, b: 0.22, a: 0.1 })),
+            background: Some(Background::Color(Color {
+                r: 0.85,
+                g: 0.22,
+                b: 0.22,
+                a: 0.1,
+            })),
             text_color: RED_ACCENT,
             border: Border::default(),
             shadow: Shadow::default(),
@@ -500,7 +528,12 @@ pub fn button_context_danger(_theme: &Theme, status: button::Status) -> button::
 pub fn button_context_disabled(_theme: &Theme, _status: button::Status) -> button::Style {
     button::Style {
         background: Some(Background::Color(Color::TRANSPARENT)),
-        text_color: Color { r: 0.4, g: 0.4, b: 0.4, a: 1.0 },
+        text_color: Color {
+            r: 0.4,
+            g: 0.4,
+            b: 0.4,
+            a: 1.0,
+        },
         border: Border::default(),
         shadow: Shadow::default(),
     }
@@ -520,7 +553,10 @@ pub fn button_exec(theme: &Theme, status: button::Status) -> button::Style {
     match status {
         button::Status::Hovered => button::Style {
             background: Some(Background::Color(Color {
-                r: 0.85, g: 0.85, b: 0.85, a: 1.0,
+                r: 0.85,
+                g: 0.85,
+                b: 0.85,
+                a: 1.0,
             })),
             text_color: BG_DARK,
             border: Border::default(),
@@ -588,7 +624,10 @@ pub fn button_menu_item_active(_theme: &Theme, status: button::Status) -> button
         },
         _ => button::Style {
             background: Some(Background::Color(Color {
-                r: 1.0, g: 1.0, b: 1.0, a: 0.04,
+                r: 1.0,
+                g: 1.0,
+                b: 1.0,
+                a: 0.04,
             })),
             text_color: TEXT_PRIMARY,
             border: Border::default(),
@@ -601,7 +640,10 @@ pub fn button_menu_item_danger(_theme: &Theme, status: button::Status) -> button
     match status {
         button::Status::Hovered => button::Style {
             background: Some(Background::Color(Color {
-                r: 0.85, g: 0.15, b: 0.15, a: 0.2,
+                r: 0.85,
+                g: 0.15,
+                b: 0.15,
+                a: 0.2,
             })),
             text_color: RED_ACCENT,
             border: Border::default(),
@@ -621,13 +663,21 @@ pub fn button_confirm(_theme: &Theme, status: button::Status) -> button::Style {
         button::Status::Hovered => button::Style {
             background: Some(Background::Color(TEXT_PRIMARY)),
             text_color: BG_DARK,
-            border: Border { color: TEXT_PRIMARY, width: 1.0, radius: 0.into() },
+            border: Border {
+                color: TEXT_PRIMARY,
+                width: 1.0,
+                radius: 0.into(),
+            },
             shadow: Shadow::default(),
         },
         _ => button::Style {
             background: Some(Background::Color(Color::TRANSPARENT)),
             text_color: TEXT_PRIMARY,
-            border: Border { color: TEXT_MUTED, width: 1.0, radius: 0.into() },
+            border: Border {
+                color: TEXT_MUTED,
+                width: 1.0,
+                radius: 0.into(),
+            },
             shadow: Shadow::default(),
         },
     }
@@ -638,13 +688,21 @@ pub fn button_abort(_theme: &Theme, status: button::Status) -> button::Style {
         button::Status::Hovered => button::Style {
             background: Some(Background::Color(TEXT_PRIMARY)),
             text_color: BG_DARK,
-            border: Border { color: TEXT_PRIMARY, width: 1.0, radius: 0.into() },
+            border: Border {
+                color: TEXT_PRIMARY,
+                width: 1.0,
+                radius: 0.into(),
+            },
             shadow: Shadow::default(),
         },
         _ => button::Style {
             background: Some(Background::Color(Color::TRANSPARENT)),
             text_color: TEXT_PRIMARY,
-            border: Border { color: TEXT_MUTED, width: 1.0, radius: 0.into() },
+            border: Border {
+                color: TEXT_MUTED,
+                width: 1.0,
+                radius: 0.into(),
+            },
             shadow: Shadow::default(),
         },
     }
@@ -664,19 +722,34 @@ pub fn text_input_dark(theme: &Theme, status: text_input::Status) -> text_input:
     let _ = theme;
     let border_color = match status {
         text_input::Status::Focused => Color {
-            r: 1.0, g: 1.0, b: 1.0, a: 0.5,
+            r: 1.0,
+            g: 1.0,
+            b: 1.0,
+            a: 0.5,
         },
         _ => BORDER_DIMMER,
     };
     text_input::Style {
         background: Background::Color(Color {
-            r: 0.102, g: 0.102, b: 0.102, a: 0.5,
+            r: 0.102,
+            g: 0.102,
+            b: 0.102,
+            a: 0.5,
         }),
-        border: Border { color: border_color, width: 1.0, radius: 0.into() },
+        border: Border {
+            color: border_color,
+            width: 1.0,
+            radius: 0.into(),
+        },
         icon: TEXT_MUTED,
         placeholder: TEXT_MUTED,
         value: TEXT_PRIMARY,
-        selection: Color { r: 1.0, g: 1.0, b: 1.0, a: 0.3 },
+        selection: Color {
+            r: 1.0,
+            g: 1.0,
+            b: 1.0,
+            a: 0.3,
+        },
     }
 }
 
@@ -685,11 +758,25 @@ pub fn text_input_cli(theme: &Theme, status: text_input::Status) -> text_input::
     let _ = status;
     text_input::Style {
         background: Background::Color(Color::TRANSPARENT),
-        border: Border { color: Color::TRANSPARENT, width: 0.0, radius: 0.into() },
+        border: Border {
+            color: Color::TRANSPARENT,
+            width: 0.0,
+            radius: 0.into(),
+        },
         icon: TEXT_MUTED,
-        placeholder: Color { r: 1.0, g: 1.0, b: 1.0, a: 0.2 },
+        placeholder: Color {
+            r: 1.0,
+            g: 1.0,
+            b: 1.0,
+            a: 0.2,
+        },
         value: TEXT_PRIMARY,
-        selection: Color { r: 1.0, g: 1.0, b: 1.0, a: 0.3 },
+        selection: Color {
+            r: 1.0,
+            g: 1.0,
+            b: 1.0,
+            a: 0.3,
+        },
     }
 }
 
@@ -701,13 +788,25 @@ pub fn text_input_rename(theme: &Theme, status: text_input::Status) -> text_inpu
     };
     text_input::Style {
         background: Background::Color(Color {
-            r: 0.08, g: 0.08, b: 0.08, a: 1.0,
+            r: 0.08,
+            g: 0.08,
+            b: 0.08,
+            a: 1.0,
         }),
-        border: Border { color: border_color, width: 1.0, radius: 0.into() },
+        border: Border {
+            color: border_color,
+            width: 1.0,
+            radius: 0.into(),
+        },
         icon: TEXT_MUTED,
         placeholder: TEXT_MUTED,
         value: TEXT_PRIMARY,
-        selection: Color { r: 1.0, g: 1.0, b: 1.0, a: 0.3 },
+        selection: Color {
+            r: 1.0,
+            g: 1.0,
+            b: 1.0,
+            a: 0.3,
+        },
     }
 }
 
@@ -719,9 +818,19 @@ pub fn scrollable_dark(theme: &Theme, status: scrollable::Status) -> scrollable:
         border: Border::default(),
         scroller: scrollable::Scroller {
             color: if hovered {
-                Color { r: 0.33, g: 0.33, b: 0.33, a: 1.0 }
+                Color {
+                    r: 0.33,
+                    g: 0.33,
+                    b: 0.33,
+                    a: 1.0,
+                }
             } else {
-                Color { r: 0.2, g: 0.2, b: 0.2, a: 1.0 }
+                Color {
+                    r: 0.2,
+                    g: 0.2,
+                    b: 0.2,
+                    a: 1.0,
+                }
             },
             border: Border {
                 color: BG_DARK,
