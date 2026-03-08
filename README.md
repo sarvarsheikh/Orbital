@@ -18,16 +18,6 @@ Welcome to **Orbital HUD** — a next-generation file explorer designed for powe
 
 Forget traditional, boring file managers. Orbital gives you telemetry, speed, and absolute control.
 
-## ✨ Features
-
-- **🚀 Blazing Fast:** Zero bloat, instant startup, written entirely in Rust.
-- **💻 Terminal Aesthetic:** Deep dark mode, monospace typography (JetBrains Mono), and custom SVG icons that pop on hover.
-- **📊 System Telemetry:** Real-time CPU and Memory usage visualizations directly in the sidebar.
-- **🗂️ Advanced File Operations:** Context menus, clipboard operations (cut/copy/paste), and drag-and-drop support.
-- **🔄 File Transfers:** Asynchronous file transfer engine with real-time progress tracking.
-- **🔍 Multiple Views:** List, Grid, and Compact modes to view your directory your way.
-- **⌨️ Keyboard Driven:** Extensive keyboard shortcuts for sorting, toggling hidden files, and jumping to directories.
-
 ## 🛠️ Installation & Setup
 
 Ensure you have [Rust](https://rustup.rs/) installed on your machine.
