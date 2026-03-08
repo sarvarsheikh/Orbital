@@ -492,13 +492,6 @@ impl OrbitalHud {
                                 self.drag_start_pos = self.current_raw_mouse_pos;
                                 self.current_drag_pos = self.current_raw_mouse_pos;
                             }
-                        // Dismiss context menu
-                        self.context_menu = None;
-
-                        if let Some(idx) = self.hovered_row {
-                            self.dragging_item = Some(idx);
-                            self.drag_start_pos = self.current_raw_mouse_pos;
-                            self.current_drag_pos = self.current_raw_mouse_pos;
                         }
                     }
                     Event::Mouse(mouse::Event::ButtonPressed(mouse::Button::Right)) => {
